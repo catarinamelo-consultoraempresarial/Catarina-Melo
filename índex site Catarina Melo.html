@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catarina | Consultora Empresarial</title>
+  <style>
+    :root {
+      --azul: #0a1f44;
+      --bege: #f5f2eb;
+      --rosa: #f7d6e0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bege);
+      color: var(--azul);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--azul);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: var(--rosa);
+    }
+
+    nav {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--azul);
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: var(--azul);
+      margin-bottom: 1rem;
+    }
+
+    .services, .contact-info {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .service-box {
+      background-color: white;
+      padding: 1.5rem;
+      border-left: 5px solid var(--rosa);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: var(--azul);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #061635;
+    }
+
+    footer {
+      background-color: var(--azul);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Catarina – Consultora Empresarial</h1>
+    <p>Inovação e Estratégia para o Crescimento do Seu Negócio</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou consultora empresarial especializada em gestão de negócios com foco na inovação. Com anos de experiência no mercado, ajudo empresas a otimizarem processos, desenvolverem estratégias e alcançarem resultados sustentáveis.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Diagnóstico Empresarial</h3>
+        <p>Análise completa da estrutura organizacional e processos da sua empresa para identificar oportunidades de melhoria.</p>
+      </div>
+      <div class="service-box">
+        <h3>Gestão Estratégica</h3>
+        <p>Planejamento estratégico personalizado com foco em inovação, posicionamento e crescimento sustentável.</p>
+      </div>
+      <div class="service-box">
+        <h3>Mentoria Executiva</h3>
+        <p>Acompanhamento e orientação prática para líderes e gestores que buscam transformar suas organizações.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="contact-info">
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5598981141242" target="_blank">98 98114-1242</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/seuusuario" target="_blank">@seuusuario</a></p>
+    </div>
+
+    <form action="https://formspree.io/f/meqwbqgj" method="POST">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Catarina – Consultoria Empresarial. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
